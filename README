@@ -1,0 +1,16 @@
+Ce projet C++ contient des classes pour la Raspberry permettant d'afficher un message sur unjournal lumineux.
+
+Il contient les classes :
+ - IRJournalLumineux
+ - IRLigne
+ - IRServeurUDP
+ - PortSerieAfficheur   -> cette classe gère le port série du journal lumineux
+
+Le fichier main.cpp contient le programme principal. La fonction main est vide.
+
+Le makefile permet une compilation complète du projet. Pour compiler, taper :
+    make
+S'il n'y a pas d'erreur lors de la compilation, un executable nommé journal se crée. Pour le lancer, taper :
+    ./journal
+Pour supprimer tous les fichiers créés par la compilation (*.o et journal), taper la commande :
+    make clean
